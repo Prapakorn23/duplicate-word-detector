@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Flask
+instance/
+.webassets-cache
+
+# Uploads and Cache
+uploads/
+cache/
+*.pkl
+
+# Database
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Static Generated Files
+static/*.png
+static/*.jpg
+static/*.jpeg
+!static/logo.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Environment Variables
+.env
+.env.local
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Documentation Build
+docs/_build/
+site/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.AppleDouble
+.LSOverride
+

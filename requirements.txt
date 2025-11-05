@@ -1,0 +1,35 @@
+# Core Dependencies
+Flask==3.0.0
+flask-cors==4.0.0
+pythainlp==4.0.2
+pandas==2.1.3
+numpy==1.26.2
+matplotlib==3.8.2
+
+# Database - SQLAlchemy ORM (รองรับหลาย database engines)
+SQLAlchemy==2.0.23
+Flask-SQLAlchemy==3.1.1
+
+# Database Drivers (เลือกติดตั้งตามที่ใช้)
+# SQLite (built-in Python - ไม่ต้องติดตั้งเพิ่ม)
+
+# PostgreSQL
+psycopg2-binary==2.9.9
+# หรือ psycopg2==2.9.9 (ต้อง compile)
+
+# MySQL/MariaDB
+pymysql==1.1.0
+# หรือ mysqlclient==2.2.0 (ต้อง compile)
+
+# PDF Processing (Basic - for text-based PDFs)
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+
+# PDF Processing (Advanced - for image-based PDFs with OCR)
+# ต้องติดตั้ง Tesseract-OCR ก่อน: https://github.com/tesseract-ocr/tesseract
+pdf2image==1.16.3
+pytesseract==0.3.10
+Pillow==10.1.0
+
+# Performance & Utilities
+python-dotenv==1.0.0  # สำหรับ environment variables

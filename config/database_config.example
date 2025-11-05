@@ -1,0 +1,53 @@
+# Database Configuration Examples
+# คัดลอกไฟล์นี้เป็น .env ที่ root folder
+
+# ============================================
+# Database URL Configuration
+# ============================================
+
+# Option 1: SQLite (default - ไม่ต้องติดตั้งอะไรเพิ่ม)
+DATABASE_URL=sqlite:///data/parliament_words.db
+
+# Option 2: PostgreSQL (แนะนำสำหรับ production)
+# DATABASE_URL=postgresql://username:password@localhost:5432/parliament_db
+# DATABASE_URL=postgresql://postgres:mypassword@localhost:5432/parliament_words
+
+# Option 3: MySQL/MariaDB
+# DATABASE_URL=mysql+pymysql://username:password@localhost:3306/parliament_db
+# DATABASE_URL=mysql+pymysql://root:mypassword@localhost:3306/parliament_words
+
+# ============================================
+# Flask Configuration
+# ============================================
+SECRET_KEY=your-secret-key-here-change-in-production
+DEBUG=True
+
+# ============================================
+# Server Configuration
+# ============================================
+HOST=0.0.0.0
+PORT=5000
+
+# ============================================
+# Instructions
+# ============================================
+
+# สำหรับ SQLite:
+# - ไม่ต้องติดตั้งอะไรเพิ่ม
+# - ฐานข้อมูลจะสร้างอัตโนมัติที่ data/parliament_words.db
+# - เหมาะสำหรับ development และ single-user
+
+# สำหรับ PostgreSQL:
+# 1. ติดตั้ง PostgreSQL server
+# 2. สร้าง database: CREATE DATABASE parliament_words;
+# 3. ติดตั้ง: pip install psycopg2-binary
+# 4. ใส่ connection string ด้านบน
+# 5. เหมาะสำหรับ production และ multi-user
+
+# สำหรับ MySQL/MariaDB:
+# 1. ติดตั้ง MySQL/MariaDB server
+# 2. สร้าง database: CREATE DATABASE parliament_words CHARACTER SET utf8mb4;
+# 3. ติดตั้ง: pip install pymysql
+# 4. ใส่ connection string ด้านบน
+# 5. เหมาะสำหรับ production และ multi-user
+
